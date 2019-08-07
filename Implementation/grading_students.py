@@ -5,20 +5,12 @@ import random
 import re
 import sys
 
-def get_multiple(grade):
-    cur = grade
-    while (cur % 5) != 0:
-      cur += 1
-    return (cur - grade, cur)
-
 def gradingStudents(grades):
     new_grades = []
     for grade in grades:
-        if grade >= 38:
-            ans = get_multiple(grade)
-            if ans[0] < 3:
-                new_grades.append(ans[1])
-                continue
+        to_next = 5 - (grade % 5)
+        if grade >= 38 and to_next < 3:
+          new_grades.append(grade + to_next)
+          continue
         new_grades.append(grade)
     return new_grades
-    
