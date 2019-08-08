@@ -15,7 +15,7 @@ def pageCount(n, p):
     pages_turned_forwards = 0
     cur_page_backwards = len(book) - 1
     pages_turned_backwards = 0
-    # turn pages forwards and bakcwards simultaneously until the page is found
+    # turn pages forwards and backwards simultaneously until the page is found
     while p not in book[cur_page_forwards] + book[cur_page_backwards]:
         cur_page_forwards += 1
         pages_turned_forwards += 1
