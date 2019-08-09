@@ -1,11 +1,4 @@
 # https://www.hackerrank.com/challenges/apple-and-orange/problem
-import math
-import os
-import random
-import re
-import sys
-
-# Complete the countApplesAndOranges function below.
 def countApplesAndOranges(s, t, a, b, apples, oranges):
     # initialize fruit counts
     apple_count = 0

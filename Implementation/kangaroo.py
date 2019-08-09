@@ -1,10 +1,4 @@
 # https://www.hackerrank.com/challenges/kangaroo/problem
-import math
-import os
-import random
-import re
-import sys
-
 def kangaroo(x1, v1, x2, v2):
     # check to see if slower/same-speed moving kangaroo starts behind
     if (x1 > x2 and v1 >= v2) or (x1 < x2 and v1 <= v2):

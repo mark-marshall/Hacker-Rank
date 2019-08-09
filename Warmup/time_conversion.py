@@ -1,7 +1,4 @@
 # https://www.hackerrank.com/challenges/time-conversion/problem
-import os
-import sys
-
 def timeConversion(s):
   time_arr = s.split(':')
   # handle case for 12:00:00 AM - 1:00:00 AM

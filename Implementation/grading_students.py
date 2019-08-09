@@ -1,10 +1,4 @@
 # https://www.hackerrank.com/challenges/grading/problem
-import math
-import os
-import random
-import re
-import sys
-
 def gradingStudents(grades):
     new_grades = []
     for grade in grades:

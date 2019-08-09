@@ -1,10 +1,4 @@
 # https://www.hackerrank.com/challenges/birthday-cake-candles/problem
-import math
-import os
-import random
-import re
-import sys
-
 def birthdayCakeCandles(ar):
     cur_tallest = (0,0)
     for candle_height in ar:

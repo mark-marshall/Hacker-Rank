@@ -1,6 +1,4 @@
 # https://www.hackerrank.com/challenges/drawing-book/problem
-import os
-import sys
 def pageCount(n, p):
     # initiate a book array with the first page set of None, 1
     book = [[None, 1]]

@@ -1,10 +1,4 @@
 # https://www.hackerrank.com/challenges/diagonal-difference/problem
-import math
-import os
-import random
-import re
-import sys
-
 def diagonalDifference(arr):
   # diagonals = primary_diagonal, secondary_diagonal
   diagonals = ([], [])
