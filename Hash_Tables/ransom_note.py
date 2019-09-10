@@ -12,4 +12,4 @@ def checkMagazine(magazine, note):
         else:
             return "No"
     return "Yes"
-    
+     
