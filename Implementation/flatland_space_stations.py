@@ -1,6 +1,4 @@
 # https://www.hackerrank.com/challenges/flatland-space-stations/problem
-
-# Python
 def flatlandSpaceStations(m, n, c):
   c.sort()
   cur_idx = 0
