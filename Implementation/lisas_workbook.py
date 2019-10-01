@@ -4,7 +4,7 @@
 def workbook(n, k, arr):
   num_special_problems = 0
   cur_page = 0
-  problem_on_page = 0;
+  problem_on_page = 0
   for chapter in arr:
     cur_page += 1
     problem_on_page = 0
