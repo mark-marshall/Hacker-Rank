@@ -12,7 +12,7 @@ def workbook(n, k, arr):
       problem = i + 1
       if problem_on_page + 1 > k:
         cur_page += 1
-        problem_on_page = 1;
+        problem_on_page = 1
       else:
         problem_on_page += 1
       if problem == cur_page:
