@@ -25,6 +25,5 @@ def sherlockAndAnagrams(s):
         matched += len(sets[cur_sorted_chain])
         sets[cur_sorted_chain].append(idx)
       cur_pos += 1  
-  print(sets)
   # return the number of matches
   return matched
