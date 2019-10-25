@@ -6,20 +6,20 @@ def happyLadybugs(b):
       return 'YES'
     else:
       return 'NO'
-  unhappy = False
+  happy = True
   blanks = False
   tally = {}
   for idx,bug in enumerate(b):
     # determine whether already happy
     # check if at start or end
     if idx == 0 and not (bug == b[idx+1]):
-      unhappy = True
+      happy = False
     elif idx == len(b) - 1 and not (bug == b[idx-1]):
-      unhappy = True
+      happy = False
     # otherwise check if same as one before or one after
     else:
       if not (bug == b[idx-1] or bug == b[idx+1]):
-        unhappy = True
+        happy = False
     # determine whether more than one of at least each ladybug
     # determine whether there's an empty space
     if bug == '_':
@@ -30,7 +30,7 @@ def happyLadybugs(b):
       tally[bug] = 'Matched'
   available_pairs = not 'Unmatched' in tally.values()
   # check if criteria are met
-  if (available_pairs and blanks) or (not unhappy):
+  if happy or (available_pairs and blanks):
     return 'YES'
   else:
     return 'NO'
