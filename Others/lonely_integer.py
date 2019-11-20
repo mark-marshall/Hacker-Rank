@@ -1,10 +1,10 @@
 # https://www.hackerrank.com/challenges/lonely-integer/problem
 def lonelyinteger(a):
-  tally = {}
+  tally = []
   for num in a:
-    if num in tally:
-      tally[num] = False
+    if num not in tally:
+      tally.append(num)
     else:
-      tally[num] = True
-  return [key for key, value in tally.items() if value == True][0]
+      tally.remove(num)
+  return tally[0]
   
