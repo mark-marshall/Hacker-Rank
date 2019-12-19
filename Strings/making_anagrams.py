@@ -39,3 +39,28 @@ const makeAnagram = (a,b) => {
     }
     return dels
 }
+
+# TypeScript
+const makeAnagram = (a:string,b:string) => {
+    type Tally  = {
+    [key: string]: number;
+    }
+    const tally:Tally = {};
+    let dels:number = 0;
+    a.split('').forEach(char => {
+        char in tally ?
+        tally[char] += 1 :
+        tally[char] = 1
+    })
+    b.split('').forEach(char => {
+        (!(char in tally)) || (tally[char] === 0) ?
+        dels += 1 :
+        tally[char] -= 1
+    })
+    for(let char in tally){
+        tally[char] > 0 ?
+        dels += tally[char] :
+        null
+    }
+    return dels
+}
