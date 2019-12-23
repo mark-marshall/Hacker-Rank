@@ -42,7 +42,7 @@ const makeAnagram = (a,b) => {
 
 # TypeScript
 const makeAnagram = (a:string,b:string) => {
-    type Tally  = {
+    type Tally = {
     [key: string]: number;
     }
     const tally:Tally = {};
